@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="698.0" style="-fx-background-color: #00ccff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shuttle.fankaar.LoginController">
+   <center>
+       <AnchorPane id="background" prefHeight="500.0" prefWidth="581.0" styleClass="bk" stylesheets="@../../../css/styles.css" BorderPane.alignment="CENTER">
+           <TabPane fx:id="maintab" prefHeight="328.0" prefWidth="258.0" stylesheets="@../../../css/tabpane.css" tabClosingPolicy="UNAVAILABLE" translateX="50.0" translateY="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <Tab closable="false" text="User">
+                   <BorderPane prefWidth="300.0">
+                       <center>
+                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="283.0" prefWidth="263.0">
+                               <Text fill="WHITE" layoutX="48.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shuttle User">
+                                   <font>
+                                       <Font name="Britannic Bold" size="30.0" />
+                                   </font>
+                                   <effect>
+                                       <DropShadow>
+                                           <color>
+                                               <Color green="0.34210526943206787" blue="0.2793859541416168" />
+                                           </color>
+                                       </DropShadow>
+                                   </effect>
+                               </Text>
+                               <PasswordField fx:id="uPasswordField" alignment="CENTER" layoutX="28.0" layoutY="95.0" prefHeight="27.0" prefWidth="200.0" promptText="PASSWORD" style="-fx-background-color: white;-fx-border-color: #34eb7a; -fx-border-width: 0px 0px 2px 0px;" />
+                               <TextField fx:id="uTextField" alignment="CENTER" layoutX="28.0" layoutY="58.0" prefHeight="27.0" prefWidth="200.0" promptText="USERNAME" style="-fx-background-color:white; -fx-border-color: #34eb7a; -fx-border-width: 0px 0px 2px 0px;">
+                                   <font>
+                                       <Font name="System Bold" size="12.0" />
+                                   </font>
+                               </TextField>
+                               <Button fx:id="uLogin" layoutX="26.0" layoutY="139.0" mnemonicParsing="false" onAction="#uLogin" prefHeight="35.0" prefWidth="203.0" style="-fx-background-radius: 5px; -fx-border-color: white; -fx-border-radius: 5px; -fx-border-width: 2px;" styleClass="mercedes" stylesheets="@../../../css/styles.css" text="Login">
+                                   <font>
+                                       <Font name="Britannic Bold" size="15.0" />
+                                   </font>
+                               </Button>
+                               <Button fx:id="signup" layoutX="27.0" layoutY="188.0" mnemonicParsing="false" onAction="#signup" prefHeight="27.0" prefWidth="201.0" styleClass="darkblue" text="Sign Up">
+                                   <font>
+                                       <Font name="Lucida Fax Demibold" size="12.0" />
+                                   </font>
+                               </Button>
+                               <Button fx:id="forgot" layoutX="26.0" layoutY="233.0" mnemonicParsing="false" onAction="#forget" prefHeight="27.0" prefWidth="203.0" styleClass="darkblue" text="Forgot Password">
+                                   <font>
+                                       <Font name="Lucida Fax Demibold" size="13.0" />
+                                   </font>
+                               </Button>
+                           </AnchorPane>
+                       </center>
+                   </BorderPane>
+               </Tab>
+            <Tab closable="false" text="Driver">
+               <content>
+                  <BorderPane prefWidth="300.0">
+                     <center>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="283.0" prefWidth="263.0">
+                           <children>
+                              <Text fill="WHITE" layoutX="36.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shuttle Driver">
+                                 <font>
+                                    <Font name="Britannic Bold" size="30.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color green="0.34210526943206787" blue="0.2793859541416168" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </Text>
+                              <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="28.0" layoutY="95.0" prefHeight="27.0" prefWidth="200.0" promptText="PASSWORD" style="-fx-background-color: white;-fx-border-color: #34eb7a; -fx-border-width: 0px 0px 2px 0px;" />
+                              <TextField fx:id="textField" alignment="CENTER" layoutX="28.0" layoutY="58.0" prefHeight="27.0" prefWidth="200.0" promptText="USERNAME" style="-fx-background-color:white; -fx-border-color: #34eb7a; -fx-border-width: 0px 0px 2px 0px;">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="bloginDriver" layoutX="26.0" layoutY="139.0" mnemonicParsing="false" onAction="#dLogin" prefHeight="35.0" prefWidth="203.0" style="-fx-background-radius: 5px; -fx-border-color: white; -fx-border-radius: 5px; -fx-border-width: 2px;" styleClass="mercedes" stylesheets="@../../../css/styles.css" text="Login">
+                                 <font>
+                                    <Font name="Britannic Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="signup1" layoutX="27.0" layoutY="188.0" mnemonicParsing="false" onAction="#signup" prefHeight="27.0" prefWidth="201.0" styleClass="darkblue" text="Sign Up">
+                                 <font>
+                                    <Font name="Lucida Fax Demibold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="adminlogin1" layoutX="26.0" layoutY="233.0" mnemonicParsing="false" onAction="#forget" prefHeight="27.0" prefWidth="203.0" styleClass="darkblue" text="Forgot Password">
+                                 <font>
+                                    <Font name="Lucida Fax Demibold" size="13.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </content>
+            </Tab>
+           </TabPane>
+
+
+       </AnchorPane>
+   </center>
+</BorderPane>

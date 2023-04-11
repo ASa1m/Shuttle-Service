@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="700.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shuttle.fankaar.DriverMapController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <StackPane fx:id="sPane">
+      <ImageView fx:id="mapImage" fitHeight="447.0" fitWidth="724.0" onMousePressed="#updateLocation" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../../images/Map_zoom.jpg" />
+      </ImageView>
+      <ImageView fx:id="sLocation1" fitHeight="31.0" fitWidth="107.0" layoutX="311.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <Glow level="0.68" />
+         </effect>
+         <Image url="@../../../images/User-location.png" />
+      </ImageView>
+      <ImageView fx:id="sLocation" fitHeight="31.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../../images/Shuttle-Location.png" />
+         <effect>
+            <Glow level="0.68" />
+         </effect>
+      </ImageView>
+   </StackPane>
+</VBox>

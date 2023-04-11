@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="700.0" spacing="20.0" style="-fx-background-color: #89b8f5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shuttle.fankaar.UserMapController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <TilePane prefHeight="200.0" prefWidth="200.0">
+        <effect>
+            <DropShadow height="30.53" offsetX="-3.0" offsetY="3.0" radius="11.787500000000001" spread="0.01"
+                        width="18.62">
+                <color>
+                    <Color opacity="0.46206897497177124"/>
+                </color>
+            </DropShadow>
+        </effect>
+        <StackPane fx:id="sPane">
+            <ImageView fx:id="mapImage" fitHeight="456.0" fitWidth="663.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../../images/Map_zoom.jpg"/>
+            </ImageView>
+            <ImageView fx:id="sLocation" fitHeight="31.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true"
+                       visible="false">
+                <Image url="@../../../images/Shuttle-Location.png"/>
+                <effect>
+                    <Glow level="0.8"/>
+                </effect>
+            </ImageView>
+            <ImageView fx:id="uLocation" fitHeight="31.0" fitWidth="107.0" layoutX="311.0" layoutY="218.0"
+                       pickOnBounds="true" preserveRatio="true">
+                <effect>
+                    <Glow level="0.8"/>
+                </effect>
+                <Image url="@../../../images/User-location.png"/>
+            </ImageView>
+          <Rectangle fx:id="borderline" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0"
+                     onMouseClicked="#updateLocation" opacity="0.0" rotate="-121.3" scaleX="2.2" scaleY="2.4"
+                     stroke="BLACK" strokeType="INSIDE" translateX="20.0" translateY="-29.0" width="200.0"/>
+        </StackPane>
+    </TilePane>
+   <ToolBar prefHeight="69.0" prefWidth="663.0">
+     <items>
+           <Button fx:id="bRequest" defaultButton="true" mnemonicParsing="false" onAction="#requestShuttle" style="-fx-background-color: #4c66cf;" text="Request" textFill="WHITE" />
+         <Separator prefHeight="26.0" prefWidth="13.0" />
+       <Button fx:id="bCancel" cancelButton="true" disable="true" mnemonicParsing="false" onAction="#cancelRequest" style="-fx-background-color: #fac6b6;" text="Cancel" textFill="#f74d4d" />
+         <ProgressIndicator fx:id="rProgress" prefHeight="11.0" prefWidth="50.0" visible="false" />
+     </items>
+      <effect>
+         <DropShadow blurType="ONE_PASS_BOX" height="44.83" offsetX="-1.0" offsetY="1.0" radius="22.509999999999998" width="47.21">
+            <color>
+               <Color opacity="0.5" />
+            </color>
+         </DropShadow>
+      </effect>
+      <padding>
+         <Insets bottom="11.0" left="13.0" top="8.0" />
+      </padding>
+   </ToolBar>
+</VBox>
