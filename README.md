@@ -46,7 +46,7 @@ The Shuttle Tracking System is a Java application that allows users to track the
 - Abdullah Saim
 - Onkar - [Github](https://github.com/onkarrai06) 
 - Areeba Tanveer
-- Aniqa Tufail
+- Aniqa Tufail - [Github](https://github.com/AniqaTufail)
 - Muneeb Ahmed
 - Muhammad Abubakar
 
